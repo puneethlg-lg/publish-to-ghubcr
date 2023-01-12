@@ -57,6 +57,6 @@ jobs:
       # https://github.com/docker/metadata-action
       - name: Build the test-docker Docker image
         run: |
-            docker build . --tag ghcr.io/puneethgcr/test-docker-gcr-demo:latest
-            docker run ghcr.io/puneethgcr/test-docker-gcr-demo:latest
-            docker push ghcr.io/puneethgcr/test-docker-gcr-demo:latest
+            docker build . --tag ghcr.io/puneethlg-lg/test-docker-gcr-demo:latest
+            docker run ghcr.io/puneethlg-lg/test-docker-gcr-demo:latest
+            docker push ghcr.io/puneethlg-lg/test-docker-gcr-demo:latest
