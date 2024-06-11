@@ -37,11 +37,12 @@ jobs:
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
-      - name: Install cosign
-        if: github.event_name != 'pull_request'
-        uses: sigstore/cosign-installer@f3c664df7af409cb4873aa5068053ba9d61a57b6 #v2.6.0
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@v3.5.0
         with:
-          cosign-release: 'v2.2.4'
+          cosign-release: 'v2.2.4' # Use a valid release version
+      - name: Check install!
+        run: cosign version
 
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
